@@ -55,7 +55,8 @@ if (!document.querySelector('link[rel="icon"]')) {
 if (!document.querySelector('link[rel="canonical"]')) {
   const canonical = document.createElement('link');
   canonical.rel = 'canonical';
-  canonical.href = window.location.origin + window.location.pathname;
+  const path = window.location.pathname.endsWith('/index.html') ? '/' : window.location.pathname;
+  canonical.href = window.location.origin + path;
   document.head.appendChild(canonical);
 }
 
