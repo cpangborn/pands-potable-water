@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pands-potable-water.netlify.app/sitemap.xml
