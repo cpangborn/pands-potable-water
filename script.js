@@ -43,3 +43,46 @@ document.querySelectorAll('.footer-grid').forEach((footer) => {
   contact.innerHTML = `<small>24/7 · 365 days</small><a href="tel:+447301227021">${sitePhone}</a><a href="mailto:${siteEmail}">${siteEmail}</a>`;
   footer.appendChild(contact);
 });
+
+if (!document.querySelector('link[rel="icon"]')) {
+  const favicon = document.createElement('link');
+  favicon.rel = 'icon';
+  favicon.type = 'image/svg+xml';
+  favicon.href = 'favicon.svg';
+  document.head.appendChild(favicon);
+}
+
+if (!document.querySelector('link[rel="canonical"]')) {
+  const canonical = document.createElement('link');
+  canonical.rel = 'canonical';
+  canonical.href = window.location.origin + window.location.pathname;
+  document.head.appendChild(canonical);
+}
+
+if (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html')) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'P&S Potable Water',
+    url: window.location.origin + '/',
+    telephone: '+44 7301 227 021',
+    email: siteEmail,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Hallgrove Farm Industrial Estate, London Road',
+      addressLocality: 'Bagshot',
+      addressRegion: 'Surrey',
+      postalCode: 'GU19 5HP',
+      addressCountry: 'GB'
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'P and S Tankers Ltd',
+      url: 'https://www.pandstankers.co.uk/'
+    }
+  };
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(schema);
+  document.head.appendChild(script);
+}
