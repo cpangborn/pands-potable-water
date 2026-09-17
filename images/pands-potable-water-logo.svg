@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 330">
+<path d="M 0,57 L 0,215 L 52,215 L 52,167 L 118,167 L 152,155 L 170,129 L 170,89 L 154,65 L 119,56 Z" fill="#2f3439"/>
+<path d="M 178,105 L 197,88 L 221,86 L 244,96 L 253,113 L 250,130 L 238,143 L 271,160 L 255,184 L 228,167 L 212,192 L 185,214 L 160,210 L 146,194 L 145,172 L 158,151 L 184,140 L 174,124 Z" fill="#1674b8"/>
+<path d="M 271,52 L 436,52 L 414,91 L 340,90 L 327,96 L 326,105 L 338,112 L 396,120 L 426,138 L 436,161 L 436,183 L 423,204 L 399,215 L 286,215 L 269,200 L 289,175 L 303,180 L 378,180 L 391,173 L 393,164 L 384,158 L 318,150 L 286,138 L 271,119 L 271,91 L 284,68 Z" fill="#2f3439"/>
+<path d="M 444,122 C 448,62 501,6 569,5 C 638,4 692,51 695,118 C 696,149 686,174 671,192 C 681,167 686,143 681,117 C 673,68 629,30 576,30 C 514,30 465,66 444,122 Z" fill="#1674b8"/>
+<path d="M 555,29 C 555,29 488,121 488,153 C 488,192 515,220 555,220 C 595,220 622,192 622,153 C 622,121 555,29 555,29 Z" fill="#1674b8"/>
+<path d="M 645,70 C 663,92 670,119 670,145 C 670,174 657,196 635,216 L 610,216 C 633,194 646,171 650,144 C 654,116 651,94 645,70 Z" fill="#6f8293"/>
+<text x="4" y="283" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800" letter-spacing="3" fill="#1674b8">POTABLE WATER</text>
+<g font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" letter-spacing="3">
+<line x1="5" y1="316" x2="62" y2="316" stroke="#6f8293" stroke-width="2"/>
+<text x="70" y="321" fill="#6f8293">SUPPLY</text><text x="172" y="321" fill="#1674b8">|</text><text x="184" y="321" fill="#6f8293">TRANSFER</text><text x="305" y="321" fill="#1674b8">|</text><text x="317" y="321" fill="#6f8293">SOLUTIONS</text><text x="446" y="321" fill="#1674b8">|</text><text x="458" y="321" fill="#1674b8" font-weight="700">24/7/365</text>
+<line x1="625" y1="316" x2="695" y2="316" stroke="#6f8293" stroke-width="2"/>
+</g></svg>
