@@ -3,6 +3,7 @@ if (year) year.textContent = new Date().getFullYear();
 
 const sitePhone = '07301 227 021';
 const siteEmail = 'sales@pandstankers.co.uk';
+const siteAddress = 'Hallgrove Farm Industrial Estate, London Road, Bagshot, Surrey, GU19 5HP';
 
 const logoStyles = document.createElement('style');
 logoStyles.textContent = `
@@ -12,9 +13,10 @@ logoStyles.textContent = `
 .header-contact{display:flex;align-items:center;gap:14px;margin-left:18px;font-size:11px;font-weight:700;white-space:nowrap}
 .header-contact a{opacity:1!important}
 .header-contact .header-phone{color:#5ad5eb}
-.footer-contact{display:flex;flex-direction:column;gap:5px;min-width:190px}
+.footer-contact{display:flex;flex-direction:column;gap:5px;min-width:220px}
 .footer-contact a{font-size:11px;font-weight:700;color:#d5e5eb}
 .footer-contact small{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#7f99a7}
+.footer-contact .footer-address{font-size:9px;font-weight:500;line-height:1.45;color:#8fa7b3;max-width:260px}
 @media(max-width:1050px){.header-contact{display:none}}
 @media(max-width:850px){.site-header .logo{width:165px;height:64px}.site-header .logo .site-logo-image{width:165px;height:64px}.footer-contact{min-width:0}}
 `;
@@ -40,7 +42,7 @@ document.querySelectorAll('.footer-grid').forEach((footer) => {
   if (footer.querySelector('.footer-contact')) return;
   const contact = document.createElement('div');
   contact.className = 'footer-contact';
-  contact.innerHTML = `<small>24/7 · 365 days</small><a href="tel:+447301227021">${sitePhone}</a><a href="mailto:${siteEmail}">${siteEmail}</a>`;
+  contact.innerHTML = `<small>24/7 · 365 days</small><a href="tel:+447301227021">${sitePhone}</a><a href="mailto:${siteEmail}">${siteEmail}</a><span class="footer-address">${siteAddress}</span>`;
   footer.appendChild(contact);
 });
 
