@@ -2,10 +2,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 const logoStyles = document.createElement('style');
 logoStyles.textContent = `
-.site-header .logo{display:flex;align-items:center;width:220px;height:82px;font-size:0;letter-spacing:0}
+.site-header .logo{display:flex;align-items:center;width:200px;height:72px;font-size:0;letter-spacing:0;background:transparent;padding:0;border:0;border-radius:0}
 .site-header .logo span{display:none}
-.site-header .logo .site-logo-image{display:block;width:220px;height:82px;object-fit:contain;background:#fff;border-radius:6px;padding:4px 8px}
-@media(max-width:850px){.site-header .logo{width:175px;height:70px}.site-header .logo .site-logo-image{width:175px;height:70px;padding:4px 7px}}
+.site-header .logo .site-logo-image{display:block;width:200px;height:72px;object-fit:contain;background:transparent;border-radius:0;padding:0}
+@media(max-width:850px){.site-header .logo{width:165px;height:64px}.site-header .logo .site-logo-image{width:165px;height:64px}}
 `;
 document.head.appendChild(logoStyles);
 
