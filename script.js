@@ -17,6 +17,7 @@ logoStyles.textContent = `
 .footer-contact a{font-size:11px;font-weight:700;color:#d5e5eb}
 .footer-contact small{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#7f99a7}
 .footer-contact .footer-address{font-size:9px;font-weight:500;line-height:1.45;color:#8fa7b3;max-width:260px}
+.footer-contact .footer-privacy{font-size:9px;font-weight:700;color:#8fa7b3;margin-top:4px}
 @media(max-width:1050px){.header-contact{display:none}}
 @media(max-width:850px){.site-header .logo{width:165px;height:64px}.site-header .logo .site-logo-image{width:165px;height:64px}.footer-contact{min-width:0}}
 `;
@@ -42,7 +43,7 @@ document.querySelectorAll('.footer-grid').forEach((footer) => {
   if (footer.querySelector('.footer-contact')) return;
   const contact = document.createElement('div');
   contact.className = 'footer-contact';
-  contact.innerHTML = `<small>24/7 · 365 days</small><a href="tel:+447301227021">${sitePhone}</a><a href="mailto:${siteEmail}">${siteEmail}</a><span class="footer-address">${siteAddress}</span>`;
+  contact.innerHTML = `<small>24/7 · 365 days</small><a href="tel:+447301227021">${sitePhone}</a><a href="mailto:${siteEmail}">${siteEmail}</a><span class="footer-address">${siteAddress}</span><a class="footer-privacy" href="privacy.html">Privacy notice</a>`;
   footer.appendChild(contact);
 });
 
