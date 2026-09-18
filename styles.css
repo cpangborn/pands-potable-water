@@ -27,3 +27,9 @@
   .site-header .nav-cta{padding-left:10px;padding-right:10px}
   .mobile-menu-toggle{width:42px;height:42px;flex-basis:42px}
 }
+
+
+/* Trust and conversion sections */
+.trust-strip{background:#fff;border-bottom:1px solid #dce5e8}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-grid>div{padding:22px 24px;border-right:1px solid #dce5e8}.trust-grid>div:last-child{border-right:0}.trust-grid strong,.trust-grid span{display:block}.trust-grid strong{font-size:11px;letter-spacing:.08em;color:#0b1728}.trust-grid span{font-size:10px;line-height:1.5;color:#71808a;margin-top:5px}.emergency-home{background:#071827;color:#fff;padding:42px 0}.emergency-home-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}.emergency-home h2{font-size:40px;line-height:1;letter-spacing:-.05em;margin:0 0 10px}.emergency-home p:not(.eyebrow){color:#b9cbd3;font-size:14px;line-height:1.7;margin:0}.emergency-home a:not(.button){color:#5bd3e9;font-weight:800}.emergency-home-actions{display:flex;gap:10px;flex-shrink:0}.contact-form select{display:block;width:100%;border:1px solid #d7e1e5;margin-top:7px;padding:13px;font:12px Inter;background:#fff;color:#0b1728;outline:0}.contact-form select:focus{border-color:#1594b5}.sector-use{font-size:12px!important;font-weight:700!important;color:#1594b5!important;margin-top:14px!important}
+@media(max-width:850px){.trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div:nth-child(2){border-right:0}.trust-grid>div{border-bottom:1px solid #dce5e8}.trust-grid>div:nth-child(3),.trust-grid>div:nth-child(4){border-bottom:0}.emergency-home-inner{display:block}.emergency-home-actions{margin-top:24px;flex-wrap:wrap}.emergency-home h2{font-size:36px}}
+@media(max-width:500px){.trust-grid{grid-template-columns:1fr}.trust-grid>div{border-right:0!important;border-bottom:1px solid #dce5e8!important}.trust-grid>div:last-child{border-bottom:0!important}}
